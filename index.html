@@ -1,0 +1,332 @@
+<!-- ============================================================
+     HTML STRUCTURE
+     ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Obasola Marvelous | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Hey there, I'm</p>
+      <h1 class="hero-name" id="heroName"></h1>
+      <div class="hero-role">
+  <span id="typedRole"></span>
+  <span class="typed-cursor" id="typedCursor"></span>
+</div>
+      <p class="hero-bio">
+        I build clean, fast, and beautiful websites that people actually enjoy using.
+        Based in Nigeria — available worldwide.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See My Work</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <!-- PHOTO PLACEHOLDER — replace src with your image path -->
+      <div class="photo-frame">
+        <img src="IMG/my img 7.jpeg" alt="Obasola Marvelous" class="hero-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="photo-placeholder">
+          <span>📸</span>
+          <p>Add your photo here</p>
+          <small>Replace src="YOUR_PHOTO_HERE.jpg"</small>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Open to work
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>Obasola Marvelous</strong>, a passionate Frontend Web Developer
+            who loves turning ideas into real, working web experiences. I care deeply
+            about every pixel, every interaction, and every line of code I write.
+          </p>
+          <p>
+            My toolkit includes <strong>HTML</strong>, <strong>CSS</strong>, and
+            <strong>JavaScript</strong> — and I'm always learning and pushing my skills
+            further. I build things that are fast, responsive, and accessible to everyone.
+          </p>
+          <a href="" class="btn btn-primary" download>Download CV</a>
+        </div>
+        <div class="about-facts">
+          <div class="fact-item">
+            <div>
+              <strong>Focus</strong>
+              <p>Frontend Development</p>
+            </div>
+          </div>
+          <div class="fact-item">
+            <div>
+              <strong>Location</strong>
+              <p>Nigeria</p>
+            </div>
+          </div>
+          <div class="fact-item">
+            <div>
+              <strong>Email</strong>
+              <p>marvelousobasola4@email.com</p>
+            </div>
+          </div>
+          <div class="fact-item">
+            <div>
+              <strong>Available For</strong>
+              <p>Freelance/Contract Work</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <h2 class="section-title">What I Work With</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-top">
+            <span class="skill-level">Advanced</span>
+          </div>
+          <h3>HTML5</h3>
+          <p>Semantic markup, accessibility, SEO best practices, and clean structure.</p>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-top">
+            <span class="skill-level">Advanced</span>
+          </div>
+          <h3>CSS</h3>
+          <p>Flex, Grid, animations, responsive design, and modern CSS tricks.</p>
+    
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-top">
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation,  fetch API, events, and interactive UI logic.</p>        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-top">
+            <span class="skill-level">Advanced</span>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first layouts that look great on every screen size and device.</p>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-top">
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <h3>Git & GitHub</h3>
+          <p>Version control, branching, pull requests, and collaborative workflows.</p>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-top">
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <h3>Bootstrap</h3>
+          <p>Building responsive, mobile-first projects on the web with Bootstrap.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Things I've Built</h2>
+      <div class="projects-grid">
+
+  <article class="project-card" data-reveal>
+    <a href="https://soundtrack-indol.vercel.app/" target="_blank" class="project-link-wrap">
+      <div class="project-image">
+        <img src="IMG/PROJECT3.png" alt="SoundTrack"/>
+        <div class="project-overlay">
+          <span id="view-btn">View Project</span>
+        </div>
+      </div>
+    </a>
+    <div class="project-info">
+      <span class="project-tag">SoundTrack</span>
+      <h3>A Music Streaming App</h3>
+      <p>A fully responsive music streaming platform with playlist creation, user authentication, and seamless playback.</p>
+      <div class="project-stack">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-card" data-reveal>
+    <a href="https://realtor-ng.vercel.app/" target="_blank" class="project-link-wrap">
+      <div class="project-image">
+        <img src="IMG/PROJECT2.png" alt="Realtor"/>
+        <div class="project-overlay">
+          <span id="view-btn">View Project</span>
+        </div>
+      </div>
+    </a>
+    <div class="project-info">
+      <span class="project-tag">Realtor</span>
+      <h3>Real Estate Platform</h3>
+      <p>A responsive real estate platform for buying, selling, and renting properties.</p>
+      <div class="project-stack">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-card" data-reveal>
+    <a href="https://organic-olive.vercel.app/" target="_blank" class="project-link-wrap">
+      <div class="project-image">
+        <img src="IMG/organic.png" alt="Organic"/>
+        <div class="project-overlay">
+          <span id="view-btn">View Project</span>
+        </div>
+      </div>
+    </a>
+    <div class="project-info">
+      <span class="project-tag">Organic</span>
+      <h3>Organic Landing Page</h3>
+      <p>A modern, responsive landing page for an organic food brand with smooth animations and mobile-first design.</p>
+      <div class="project-stack">
+        <span>BOOTSTRAP 5</span><span>CSS</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-card" data-reveal>
+    <a href="https://velourandveil.vercel.app/" target="_blank" class="project-link-wrap">
+      <div class="project-image">
+        <img src="IMG/PROJECT1.png" alt="Velour and Veil"/>
+        <div class="project-overlay">
+          <span id="view-btn">View Project</span>
+        </div>
+      </div>
+    </a>
+    <div class="project-info">
+      <span class="project-tag">Velour and Veil</span>
+      <h3>Velour and Veil</h3>
+      <p>A responsive e-commerce platform for a fashion brand with product filtering and cart functionality.</p>
+      <div class="project-stack">
+        <span>HTML</span><span>CSS</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-card" data-reveal>
+    <a href="https://to-do-list-tau-three-71.vercel.app/" target="_blank" class="project-link-wrap">
+      <div class="project-image">
+        <img src="IMG/PROJECT4.png" alt="To-Do List"/>
+        <div class="project-overlay">
+          <span id="view-btn">View Project</span>
+        </div>
+      </div>
+    </a>
+    <div class="project-info">
+      <span class="project-tag">To-Do List</span>
+      <h3>To-Do List App</h3>
+      <p>A simple and elegant to-do list application with task management and persistence.</p>
+      <div class="project-stack">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-card" data-reveal>
+    <a href="https://insurepage.vercel.app/" target="_blank" class="project-link-wrap">
+      <div class="project-image">
+        <img src="IMG/PROJECT2.png" alt="InsurePage"/>
+        <div class="project-overlay">
+          <span id="view-btn">View Project</span>
+        </div>
+      </div>
+    </a>
+    <div class="project-info">
+      <span class="project-tag">InsurePage</span>
+      <h3>InsurePage</h3>
+      <p>A responsive insurance platform for comparing policies and managing claims.</p>
+      <div class="project-stack">
+        <span>HTML</span><span>CSS</span>
+      </div>
+    </div>
+  </article>
+
+</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Work Together</h2>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <p>Got a project, a job offer, or just want to say hi? My inbox is always open. I'll get back to you as soon as possible.</p>
+          <div class="social-links">
+            <a href="https://github.com/Marqode0" class="social-link">GitHub</a>
+            <a href="https://www.instagram.com/obasolamarvelous/" class="social-link">Instagram</a>
+            <a href="https://www.tiktok.com/@marqode_?is_from_webapp=1&sender_device=pc" class="social-link">Tiktok</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xojkdqpz" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message ✉</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Designed & Built by <span>Obasola Marvelous</span> © <span id="year">2026</span></p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
